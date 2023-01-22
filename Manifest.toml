@@ -1,0 +1,12 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.8.5"
+manifest_format = "2.0"
+project_hash = "55bdd516f80d246af56e4c3f61fd8f01bbaf6a16"
+
+[[deps.MonadInterface]]
+git-tree-sha1 = "3f84385213a7de8391d6872e698b29eccde21c74"
+repo-rev = "main"
+repo-url = "/Users/le/juliaCODE/MonadInterface.jl"
+uuid = "4c81018e-a0fd-4a0d-a53b-43c59f4db333"
+version = "0.1.0"
