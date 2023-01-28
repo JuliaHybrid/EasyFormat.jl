@@ -16,6 +16,8 @@ p = Path("/home/le/CODE/{}.jl/src/{}.jl").format("Pathpy", "path") |> unwrap
 s = Str("here I am {} {}").format("haha", "hehe") * Str("!") |> unwrap
 @show s
 
+@show Str("here I am {} {}").sformat("haha", "hehe")
+
 MonadInterface.check_rules(x->x*"10", Path, "/home/here", Val(:fMa))
 MonadInterface.check_rules(x->x*"10", Str, "/home/here", Val(:fMa))
 println("successfully check fMa rule")

@@ -8,6 +8,7 @@ end
 struct Str 
     s::String 
     format::Function
+    sformat::Function
 end
 
 import MonadInterface.unwrap
@@ -35,7 +36,8 @@ fmap(f::Function, p::Path) = Path(f(p.s))
 Str(s::String) = begin 
     #closure
     _format(svec...) = Str(format(s, svec...))
-    return Str(s, _format)
+    sformat(svec...) = format(s, svec...)
+    return Str(s, _format, sformat)
 end
 fmap(f::Function, p::Str) = Str(f(p.s))
 
